@@ -1,0 +1,255 @@
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+input {
+    outline: 0;
+    border: 0;
+}
+
+body {
+    background-color: #eee;
+}
+
+
+/* header */
+
+.navHeader {
+    margin: 26px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+    .navHeader .form {
+        position: fixed;
+        top: 6px;
+        left: 0;
+        margin: 10px 20px;
+        z-index: 99;
+    }
+}
+
+@media (min-width: 500px) {
+    .navHeader .form {
+        width: 100%;
+    }
+}
+
+.navHeader button {
+    border: 0;
+    background-color: #0282B9;
+    white-space: normal;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 0 5px 5px 0;
+}
+
+.navHeader .form {
+    display: flex;
+}
+
+@media (min-width: 500px) {
+    .navHeader {
+        margin-top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .navHeader {
+        max-width: 650px;
+    }
+}
+
+.navHeader input {
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+@media (max-width: 500px) {
+    .navList {
+        justify-content: space-between;
+    }
+}
+
+.navList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navContainer {
+    margin: 0 20px;
+}
+
+@media (min-width: 500px) {
+    .navContainer {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+    }
+    .navList {
+        margin-right: -40px;
+    }
+    .navList li {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navContainer {
+        margin: 56px 20px;
+    }
+}
+
+.navList li {
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px #ccc;
+    cursor: default;
+}
+
+.functionList {
+    position: absolute;
+    right: 6px;
+    top: 4px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    padding: 8px 5px;
+    cursor: pointer;
+}
+
+@media (min-width: 500px) {
+    .functionList {
+        display: none;
+    }
+}
+
+.navList>li:hover {
+    box-shadow: 4px 4px 8px #bbb;
+}
+
+@media (min-width: 500px) {
+    .navList>li:hover .functionList {
+        display: block;
+    }
+}
+
+.removeList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: -10px;
+    top: 40px;
+    z-index: 10;
+    font-size: 14px;
+    display: none;
+}
+
+.removeList span {
+    white-space: nowrap;
+    padding: 8px 5px;
+}
+
+.removeList span:hover {
+    background-color: #ccc;
+}
+
+.navList li .site {
+    display: flex;
+    width: 180px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 500px) {
+    .navList li .site {
+        display: flex;
+        width: 160px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+}
+
+.navList .logo {
+    height: 64px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+}
+
+.navList .url {
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.add {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 64px;
+    padding: 20px 0;
+    color: #555;
+}
+
+@media (max-width: 500px) {
+    .add {
+        width: 160px;
+    }
+}
+
+.add span {
+    margin-top: 6px;
+    font-size: 16px;
+}
