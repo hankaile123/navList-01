@@ -199,7 +199,8 @@ $(function () {
 
   window.onbeforeunload = function () {
     var string = JSON.stringify(hashMap); // 本地存储只能存字符串
-    // localStorage.setItem('message', string)
+
+    localStorage.setItem('message', string);
   };
 
   $(document).on('keyup', function (e) {

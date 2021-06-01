@@ -99,7 +99,7 @@ $(function() {
     window.onbeforeunload = () => {
         const string = JSON.stringify(hashMap)
             // 本地存储只能存字符串
-            // localStorage.setItem('message', string)
+        localStorage.setItem('message', string)
     }
     $(document).on('keyup', e => {
         const { key } = e
